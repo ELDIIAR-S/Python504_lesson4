@@ -1,0 +1,18 @@
+/* Делаем рамку видимой всегда у всех полей */
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    border: 1px solid #777777 !important;
+    background-color: #242424 !important;
+    color: #ffffff !important;
+}
+
+/* При нажатии и наборе текста подсвечиваем рамку */
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border: 1.5px solid #417690 !important;
+    outline: none !important;
+}
