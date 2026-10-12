@@ -3,9 +3,7 @@ from rest_framework.exceptions import ValidationError
 from .models import Category, Product, Review
 
 
-# ====================================================
 # Сериализаторы отображения (GET)
-# ====================================================
 
 class CategoryDetailSerializer(serializers.ModelSerializer):
     class Meta:
@@ -27,9 +25,8 @@ class ReviewDetailSerializer(serializers.ModelSerializer):
         fields = ['id', 'text', 'stars', 'product_id']
 
 
-# ====================================================
 # Сериализаторы валидации входных данных (POST / PUT)
-# ====================================================
+
 
 class CategoryValidateSerializer(serializers.Serializer):
     name = serializers.CharField(

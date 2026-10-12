@@ -50,10 +50,8 @@ def category_detail_api_view(request, id):
         category.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-
-# ==========================================
 # /api/v1/products/ и /api/v1/products/<id>/
-# ==========================================
+
 
 @api_view(['GET', 'POST'])
 def product_list_create_api_view(request):
@@ -102,10 +100,7 @@ def product_detail_api_view(request, id):
         product.delete()
         return Response(status=status.HTTP_204_NO_CONTENT)
 
-
-# ==========================================
 # /api/v1/reviews/ и /api/v1/reviews/<id>/
-# ==========================================
 
 @api_view(['GET', 'POST'])
 def review_list_create_api_view(request):
